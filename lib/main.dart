@@ -4,6 +4,7 @@ import 'package:sawari/src/pages/getting_started/getting_started.dart';
 import 'package:sawari/src/pages/home_page/home_page.dart';
 import 'package:sawari/src/pages/login/login.dart';
 import 'package:sawari/src/pages/sign_up/sign_up.dart';
+import 'package:sawari/src/pages/vehicle_date_selection_page/vehicle_date_selection.dart';
 
 void main() => runApp(SawariApp());
 
@@ -20,6 +21,8 @@ class SawariApp extends StatelessWidget {
         AppRoutes.LOGIN: (context) => Login(),
         AppRoutes.SIGN_UP: (context) => SignUp(),
         AppRoutes.HOME_PAGE: (context) => HomePage(),
+        AppRoutes.VEHICLE_DATE_SELECTION_PAGE: (context) =>
+            VehicleDateSelectionpage(),
       },
     );
   }

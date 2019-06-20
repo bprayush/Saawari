@@ -6,6 +6,8 @@ import 'package:sawari/src/widgets/location_widget/location_widget.dart';
 import 'package:sawari/src/widgets/logo/logo.dart';
 
 class HomePage extends StatelessWidget {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     ScreenUtil.instance = ScreenUtil(
@@ -15,6 +17,7 @@ class HomePage extends StatelessWidget {
     )..init(context);
 
     return Scaffold(
+      key: scaffoldKey,
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -83,6 +86,9 @@ class HomePage extends StatelessWidget {
   }
 
   void tap(String city) {
-    print('Tapped $city');
+    Navigator.of(scaffoldKey.currentContext).pushNamed(
+      AppRoutes.VEHICLE_DATE_SELECTION_PAGE,
+      arguments: city,
+    );
   }
 }

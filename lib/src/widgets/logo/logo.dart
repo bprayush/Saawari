@@ -25,7 +25,7 @@ class Logo extends StatelessWidget {
       child: Text(
         'Sawaari',
         style: TextStyle(
-          fontSize: FontSize.fontSize30,
+          fontSize: FontSize.fontSize26,
           color: color,
         ),
       ),
