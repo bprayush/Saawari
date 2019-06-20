@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sawari/src/assets/assets.dart';
+import 'package:sawari/src/assets/cities.dart';
 import 'package:sawari/src/widgets/location_widget/location_widget.dart';
 import 'package:sawari/src/widgets/logo/logo.dart';
 
@@ -59,14 +60,17 @@ class HomePage extends StatelessWidget {
             Expanded(
               child: Container(
                 child: GridView.builder(
+                  physics: BouncingScrollPhysics(),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     childAspectRatio: 5 / 4,
                   ),
-                  itemCount: 6,
+                  itemCount: 8,
                   itemBuilder: (context, index) {
                     return LocationWidget(
-                      city: 'Kathmandu',
+                      city: Cities.names[index],
+                      image: Cities.cityImages[Cities.names[index]],
+                      tapHandler: tap,
                     );
                   },
                 ),
@@ -76,5 +80,9 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void tap(String city) {
+    print('Tapped $city');
   }
 }
