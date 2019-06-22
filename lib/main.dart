@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sawari/src/assets/routes.dart';
+import 'package:sawari/src/pages/delivery_selection_page/delivery_selection_page.dart';
 import 'package:sawari/src/pages/getting_started/getting_started.dart';
 import 'package:sawari/src/pages/home_page/home_page.dart';
 import 'package:sawari/src/pages/login/login.dart';
@@ -23,6 +24,7 @@ class SawariApp extends StatelessWidget {
         AppRoutes.HOME_PAGE: (context) => HomePage(),
         AppRoutes.VEHICLE_DATE_SELECTION_PAGE: (context) =>
             VehicleDateSelectionpage(),
+        AppRoutes.DELIVERY_SELECTION_PAGE: (context) => DeliverySelectionPage(),
       },
     );
   }

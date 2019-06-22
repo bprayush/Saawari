@@ -148,7 +148,12 @@ class _VehicleDateSelectionpageState extends State<VehicleDateSelectionpage> {
           SizedBox(height: ScreenUtil().setHeight(100)),
           Center(
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(
+                  AppRoutes.DELIVERY_SELECTION_PAGE,
+                  arguments: city,
+                );
+              },
               color: Colors.lime,
               child: Padding(
                 padding: EdgeInsets.symmetric(
