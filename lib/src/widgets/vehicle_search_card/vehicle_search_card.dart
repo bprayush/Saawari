@@ -260,6 +260,5 @@ class VehicleSearchCard extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }
