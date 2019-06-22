@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sawari/src/assets/assets.dart';
-import 'package:sawari/src/pages/maps_test/maps_test.dart';
 import 'package:sawari/src/widgets/selection_scaffold/selection_scaffold.dart';
 
 class DeliverySelectionPage extends StatefulWidget {
@@ -205,10 +204,8 @@ class _DeliverySelectionPageState extends State<DeliverySelectionPage>
                       Center(
                         child: RaisedButton(
                           onPressed: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => MapTest(),
-                              ),
+                            Navigator.of(context).pushNamed(
+                              AppRoutes.SEARCH_RESULTS_PAGE,
                             );
                           },
                           color: Colors.lime,

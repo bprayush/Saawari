@@ -6,4 +6,5 @@ class AppRoutes {
   static const String VEHICLE_DATE_SELECTION_PAGE =
       '/app/vehicle-date-selection';
   static const String DELIVERY_SELECTION_PAGE = 'app/delivery-selection';
+  static const String SEARCH_RESULTS_PAGE = 'app/search-result';
 }

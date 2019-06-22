@@ -11,7 +11,7 @@ import 'package:map_view/polyline.dart';
 /// - Static Maps API
 /// - Android Maps API
 /// - iOS Maps API
-const API_KEY = "<your-api-key>";
+const API_KEY = "AIzaSyDXKcJW8HVBwFeX4lskLcvMg7MFam8jdUI";
 
 class MapTest extends StatefulWidget {
   @override
