@@ -90,7 +90,7 @@ class _ImageSelectionWidgetState extends State<ImageSelectionWidget> {
                     Icons.file_upload,
                     color: Colors.black,
                   ),
-                  Text('Front View'),
+                  Text('${widget.title}'),
                 ]
               : [],
         ),

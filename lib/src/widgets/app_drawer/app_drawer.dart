@@ -114,7 +114,9 @@ class AppDrawer extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamed(AppRoutes.BOOKINGS);
+            },
             child: ListTile(
               leading: Icon(
                 Icons.calendar_today,
