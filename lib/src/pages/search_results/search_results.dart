@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sawari/src/assets/assets.dart';
+import 'package:sawari/src/widgets/booking_not_complete/booking_not_complete.dart';
 import 'package:sawari/src/widgets/logo/logo.dart';
 import 'package:sawari/src/widgets/vehicle_search_card/vehicle_search_card.dart';
 
@@ -55,6 +56,12 @@ class _SearchResultsPageState extends State<SearchResultsPage> {
               days: 3,
               book: () {
                 // Booking function goes here
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return BookingNotComplete();
+                  },
+                );
               },
             );
           },

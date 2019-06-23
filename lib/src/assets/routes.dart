@@ -7,4 +7,6 @@ class AppRoutes {
       '/app/vehicle-date-selection';
   static const String DELIVERY_SELECTION_PAGE = 'app/delivery-selection';
   static const String SEARCH_RESULTS_PAGE = 'app/search-result';
+  static const String GPS_PAGE = 'app/gps';
+  static const String PROFILE = 'app/profile';
 }
